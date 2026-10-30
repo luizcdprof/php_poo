@@ -4,12 +4,12 @@ require __DIR__ . '/../vendor/autoload.php';
 
 use App\ContaBancaria;
 
-$conta = new ContaBancaria();
-
-$conta->setBanco('Banco do Brasil');
-$conta->setNomeTitular('LuizCD Prof');
-$conta->setNumeroAgencia('1234');
-$conta->setNumeroConta('12345-6');
-$conta->setSaldo(0);
+$conta = new ContaBancaria(
+    'Banco do Brasil',
+    'LuizCD Prof',
+    '1234',
+    '12345-6',
+    0
+);
 
 var_dump($conta->exibirDadosDaConta());
