@@ -1,0 +1,17 @@
+{
+    "name": "luizcdprof/php_poo",
+    "description": "PHP POO Reference",
+    "type": "project",
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "LuizCD Prof",
+            "email": "luizcdprof@gmail.com"
+        }
+    ],
+    "require": {}
+}
