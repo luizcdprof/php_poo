@@ -6,11 +6,62 @@ namespace App;
 
 class ContaBancaria
 {
-    public string $banco = 'Banco Inter';
-    public string $nomeTitular = 'LuizCD Prof';
-    public string $numeroAgencia = '1234';
-    public string $numeroConta = '12345-7';
-    public float $saldo = 0;
+    private string $banco;
+    private string $nomeTitular;
+    private string $numeroAgencia;
+    private string $numeroConta;
+    private float $saldo;
+
+    // Getters e Setter
+    public function getBanco(): string
+    {
+        return $this->banco;
+    }
+
+    public function getNomeTitular(): string
+    {
+        return $this->nomeTitular;
+    }
+
+    public function getNumeroAgencia(): string
+    {
+        return $this->numeroAgencia;
+    }
+
+    public function getNumeroConta(): string
+    {
+        return $this->numeroConta;
+    }
+
+    public function getSaldo(): float
+    {
+        return $this->saldo;
+    }
+
+    public function setBanco(string $banco): void
+    {
+        $this->banco = $banco;
+    }
+
+    public function setNomeTitular(string $nomeTitular): void
+    {
+        $this->nomeTitular = $nomeTitular;
+    }
+
+    public function setNumeroAgencia(string $numeroAgencia): void
+    {
+        $this->numeroAgencia = $numeroAgencia;
+    }
+
+    public function setNumeroConta(string $numeroConta): void
+    {
+        $this->numeroConta = $numeroConta;
+    }
+
+    public function setSaldo(float $saldo): void
+    {
+        $this->saldo = $saldo;
+    }
 
     public function exibirDadosDaConta(): array
     {
